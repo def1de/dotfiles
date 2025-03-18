@@ -1,0 +1,12 @@
+(defwidget wrapper []
+    (box :orientation "v"
+        :space-evenly false
+        :valign "center"
+        :halign "center"
+        (box
+            :class "test_wrapper"
+            :orientation "vertical"
+            :space-evenly "false"
+        )
+    )
+)

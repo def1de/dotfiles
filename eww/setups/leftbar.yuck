@@ -1,0 +1,10 @@
+(include "./yuck/windows/vbar.yuck")
+
+(defwindow calendar
+    :monitor 0
+    :stacking "bg"
+    :focusable false
+    :geometry (geometry :anchor "center left"
+                        :height "100%")
+    :namespace "eww-calendar"
+    (datemenu))

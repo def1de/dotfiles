@@ -1,0 +1,13 @@
+@import "./scss/colors.scss";
+@import "./scss/variables.scss";
+@import "./scss/common.scss";
+
+@import "./scss/widgets/media.scss";
+@import "./scss/widgets/calendar.scss";
+@import "./scss/widgets/events.scss";
+@import "./scss/widgets/weather.scss";
+
+@import "./scss/windows/datemenu.scss";
+tooltip {
+  @include tooltip;
+}
