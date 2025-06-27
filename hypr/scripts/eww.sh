@@ -1,4 +1,3 @@
-#!/bin/bash
-pkill eww
 eww daemon
 eww open clock
+eww open clock1

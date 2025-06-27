@@ -1,2 +1,2 @@
 pkill waybar
-waybar -c ~/.config/waybar/config
+waybar -c /home/illia/.config/waybar/config

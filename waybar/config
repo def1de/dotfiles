@@ -16,6 +16,7 @@
     "margin-left": 0,
     "margin-right": 0,    
     "spacing": 0,
+    "mode": "dock",
 
     // Load Modules
     "include": ["~/.config/waybar/modules.json"],
