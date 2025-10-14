@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# This script shows a desktop widget when the workspace is empty and hides it when there are windows present.
+# Currently is not used but feel free to adapt it to your needs.
+
 hyprctl dispatch exec "/home/$(whoami)/.config/hypr/scripts/desktop_widget"
 
 event(){

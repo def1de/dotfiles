@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script toggles Hyprland's blur and shadow effects based on battery status.
+# It enables blur and shadow when the battery is charging and disables them when discharging.
+# This helps conserve battery life on laptops.
+
 battery=$(upower -e | grep battery)
 
 # Exit if no battery is detected (desktop PC or no battery present)
@@ -17,8 +21,10 @@ last_state=$(get_battery_state)
 # Set blur state accordingly on startup
 if [[ $last_state == "charging" ]]; then
   hyprctl keyword decoration:blur:enabled 1
+  hyprctl keyword decoration:shadow:enabled 1
 else
   hyprctl keyword decoration:blur:enabled 0
+  hyprctl keyword decoration:shadow:enabled 0
 fi
 
 dbus-monitor --system "type='signal',sender='org.freedesktop.UPower',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged'" |
@@ -29,8 +35,10 @@ while read -r line; do
       last_state="$current_state"
       if [[ $current_state == "charging" ]]; then
         hyprctl keyword decoration:blur:enabled 1
+        hyprctl keyword decoration:shadow:enabled 1
       elif [[ $current_state == "discharging" ]]; then
         hyprctl keyword decoration:blur:enabled 0
+        hyprctl keyword decoration:shadow:enabled 0
       fi
     fi
   fi

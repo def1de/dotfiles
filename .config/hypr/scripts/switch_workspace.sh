@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script allows switching between workspaces on the focused monitor only.
+
 # Get the active workspace on the focused monitor
 current_workspace=$(hyprctl monitors | grep "focused: yes" -B 11 | grep "active workspace" | awk '{print $3}')
 

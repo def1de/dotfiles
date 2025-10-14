@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script captures a user-selected area of the screen, saves it with a timestamped filename,
+# and copies the screenshot to the clipboard using wl-copy.
+
 # Select area
 area=$(slurp -d)
 [ -z "$area" ] && exit 1  # Exit if selection was canceled

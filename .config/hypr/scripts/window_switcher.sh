@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This adds a feature similar to Alt+Tab in Windows
+
 update() {
     # write the current workspace and focused monitor to a temporary file
     echo "$(hyprctl -j activeworkspace | jq -r '.id')" >> /tmp/workspace_monitor

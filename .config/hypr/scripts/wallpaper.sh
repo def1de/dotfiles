@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# This script changes the wallpaper to the next or previous image in the specified directory.
+# Currently not used in the config but feel free to enable it.
+# Requires hyprpaper, jq, and a directory of images at ~/Pictures/wallpaper/.
+
+# Usage: ./wallpaper.sh <-n|-p|-r>
+# -n: Next wallpaper
+# -p: Previous wallpaper
+# -r: Reload current wallpaper
+
 # Check if a flag is provided
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <-n|-p>"
