@@ -1,32 +1,16 @@
 <app>
     <variables>
-        <var name="name" data="bob"/>
     </variables>
         
-    <window layer="background" top="10">
-        <hbox class="master_box" id="master_box">
-            <vbox class="wrapper">
-                <image src="~/.config/wwidgt/pfp.png" size="200"/>
-                <label text="Wazzup!"/>
-                <button label="Click me, {% shuf -i 1-100 -n 1 %}!" update="1000" action="~/.config/wwidgt/scripts/test_button.sh"/>
-                <linear-progress-bar action="~/.config/wwidgt/scripts/random.sh" class="test_pb"/>
-                <label text="Hello, {{name}}" update="1000"/>
+    <window layer="top" left="3" width="100" >
+        <vbox class="wrapper" height="1000" halign="center" valign="center">
+            <vbox halign="center" valign="top" vexpand="true">
+                <clock format="hh"></clock>
+                <clock format="mm"></clock>
             </vbox>
-            <vbox class="wrapper" width="30">
-                <arc-progress-bar label=""
-                size="150" icon=""
-                fg-color="#CC99FFFF" bg-color="#414149ff"
-                update="1000" class="arc"
-                action="~/.config/wwidgt/scripts/random.sh"
-                x-align="-3"
-                y-align="0"/>
-                <tray/>
+            <vbox>
+                <label text="󰣇" halign="center" valign="end"/>
             </vbox>
-            <vbox class="wrapper" width="300">
-                <clock class="clock_time" format="hh:mm:ss"/>
-                <clock class="clock_day" format="--DAY--"/>
-                <clock class="clock_date" format="DD-MM-YYYY"/>
-            </vbox>
-        </hbox>
+        </vbox>        
     </window>
 </app>
