@@ -7,7 +7,7 @@ hl.window_rule({
     match = {
         class = "^(firefox)$"
     },
-    opacity = opacity,
+    opacity = opacity_high,
 })
 
 -- Opacity rules
