@@ -14,7 +14,7 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("code"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zeditor"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + delete", hl.dsp.exit())
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("$fileManager"))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("thunar"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("pkill rofi || ~/.config/hypr/scripts/rofi.sh"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())       -- dwindle
