@@ -11,10 +11,10 @@ require("windowrules")
 
 -- MONITORS
 hl.monitor({
-    output = "DP-4",
-    mode = "highres",
+    output = "DP-2",
+    mode = "3840x2160@240",
     position = "0x0",
-    scale = 1,
+    scale = 1.5,
     bitdepth = 10,
 })
 
@@ -22,14 +22,6 @@ hl.monitor({
     output = "eDP-1", -- Usually laptop monitor
     mode = "highres",
     position = "0x0",
-    scale = 1,
-    bitdepth = 10,
-})
-
-hl.monitor({
-    output = "HDMI-A-1",
-    mode = "highres",
-    position = "auto-left",
     scale = 1,
     bitdepth = 10,
 })
