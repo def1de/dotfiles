@@ -1,5 +1,5 @@
 -- WORKSPACES
-local opacity = "0.90"
+local opacity = "1.0"
 local opacity_high = "1.0"
 
 hl.window_rule({

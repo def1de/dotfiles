@@ -44,6 +44,7 @@ hl.env("QT_QPA_PLATFORM", "wayland")
 hl.env("SDL_VIDEODRIVER", "wayland")
 hl.env("CLUTTER_BACKEND", "wayland")
 hl.env("GDK_BACKEND", "wayland")
+hl.env("ELECTRON_OZONE_PLATFORM_HINT","auto")
 
 -- AUTOSTART
 hl.on("hyprland.start", function()
